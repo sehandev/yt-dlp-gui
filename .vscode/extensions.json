@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "biomejs.biome",
+    "tamasfe.even-better-toml",
+    "rust-lang.rust-analyzer",
+    "bradlc.vscode-tailwindcss",
+    "tauri-apps.tauri-vscode"
+  ]
+}

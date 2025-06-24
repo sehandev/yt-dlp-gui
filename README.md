@@ -10,9 +10,21 @@ A simple cross-platform desktop app for [yt-dlp](https://github.com/yt-dlp/yt-dl
 - **Frontend:** [Bun](https://bun.sh/), [React (Vite)](https://vitejs.dev/), [TypeScript](https://www.typescriptlang.org/), [shadcn/ui](https://ui.shadcn.com/)
 - **Backend:** [Tauri 2.0 (Rust)](https://tauri.app/), [yt-dlp (Rust bindings)](https://crates.io/crates/yt_dlp)
 
+### Tauri Plugins
+- [Clipboard](https://tauri.app/plugin/clipboard/) for checking uri that user copied
+- [Dialog](https://tauri.app/plugin/dialog/) for asking user where to download video
+- [Notification](https://tauri.app/plugin/notification/) for notifying end of downloading to user
+- [Opender](https://tauri.app/plugin/opener/) for opening downloaded video
+- [Single Instance](https://tauri.app/plugin/single-instance/)
+- [Update](https://tauri.app/plugin/updater/) for auto-update
+
 ## Getting Started
 
-_Coming soon_
+```sh
+cd yt-dlp-tauri
+bun install
+bun run tauri dev
+```
 
 ## License
 
