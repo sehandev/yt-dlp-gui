@@ -6,8 +6,7 @@ const PREPARING_MILLISECONDS = 1_000;
 const ALMOST_MILLISECONDS = 500;
 const READY_MILLISECONDS = 500;
 
-const totalProgressMilliseconds: number =
-  LOADING_MILLISECONDS + PREPARING_MILLISECONDS + ALMOST_MILLISECONDS + READY_MILLISECONDS;
+const totalProgressMilliseconds: number = LOADING_MILLISECONDS + PREPARING_MILLISECONDS + ALMOST_MILLISECONDS;
 
 function Splashscreen() {
   const [loadingText, setLoadingText] = useState("Initializing...");
@@ -23,7 +22,7 @@ function Splashscreen() {
 
     let currentStep = 0;
     let totalTime = 0;
-    let timeoutId: number;
+    let timeoutId: NodeJS.Timeout;
 
     const runStep = () => {
       if (currentStep < loadingSteps.length) {
